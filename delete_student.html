@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title></title>
+	</head>
+	<body bgcolor=#5CB8E6>
+	 <h1><center>Student List</h1></center>
+	 	<hr>
+	    <ul>
+	    {% for student in student_list %}
+	        <center>{{student.first_name}} {{student.last_name}} <a href='/student/edit/(.*)'>edit</a> &nbsp <a href='/stduent/delete/(.*)'>delete</a></center>
+	    {% endfor %}
+	    </ul>
+	</body>
+</html>
